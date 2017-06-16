@@ -3,8 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:vm="clr-namespace:PryFoodRankApp.ViewModels;"
              x:Class="PryFoodRankApp.Views.LoginPage"
-             Title="PryFoodRankApp"
-             BackgroundImage="images/mainScreen/main_screen.png">
+             Title="FOOD RANK"
+             BackgroundImage="images/loginAssets/loginBackground.png">
   <ContentPage.BindingContext>
     <vm:LoginViewModel/>
   </ContentPage.BindingContext>
@@ -13,13 +13,15 @@
       <Grid.RowDefinitions>
         <RowDefinition Height="Auto"/>
         <RowDefinition Height="Auto"/>
-        <RowDefinition Height="*"/>
+        <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
       </Grid.RowDefinitions>
       <Grid.ColumnDefinitions>
         <ColumnDefinition Width="*"/>
-        <ColumnDefinition Width="*"/>
+        
       </Grid.ColumnDefinitions>
-      <StackLayout Spacing="30" Grid.ColumnSpan="2">
+      <StackLayout Spacing="30" Grid.ColumnSpan="2" >
        <!-- <Image  HorizontalOptions="Center"
                 VerticalOptions="Center"
                 WidthRequest="95" HeightRequest="95"
@@ -31,12 +33,34 @@
                 HorizontalOptions="FillAndExpand"
                 LineBreakMode="WordWrap"
                 FontSize="Large"
-                Text="Sign in with your account to save and sync items"/>
+                Text=""/> 
       </StackLayout>
 
+            <StackLayout Spacing="30" Grid.ColumnSpan="2" >
+                <!-- <Image  HorizontalOptions="Center"
+                VerticalOptions="Center"
+                WidthRequest="95" HeightRequest="95"
+                Source="profile_generic.png" 
+                Aspect="AspectFill"
+                x:Name="CircleImageAvatar"/> -->
 
-      <Button
-          Grid.Row="1"
+                <Label HorizontalTextAlignment="Center"
+                HorizontalOptions="FillAndExpand"
+                LineBreakMode="WordWrap"
+                FontSize="Large"
+                Text=""/>
+            </StackLayout>
+
+            <Entry 
+                        Grid.Row="2"
+          Grid.Column="0"
+                        x:Name="UserName" 
+                        HorizontalTextAlignment="Center"
+                        
+                        Placeholder="Senha" IsPassword="False" HorizontalOptions="CenterAndExpand" Text="offspring" ></Entry>
+            <!--
+            <Button
+          Grid.Row="3"
           Grid.Column="0"
           Text="Not Now"
           Command="{Binding NotNowCommand}"
@@ -45,14 +69,14 @@
           IsEnabled="{Binding IsNotBusy}"/>
 			
       <Button
-          Grid.Row="1"
+          Grid.Row="3"
           Grid.Column="1"
           Text="Sign In"
           Command="{Binding SignInCommand}"
           HorizontalOptions="FillAndExpand"
           IsEnabled="{Binding IsNotBusy}"
           TextColor="White"
-          BackgroundColor="{StaticResource Primary}"/>
+          BackgroundColor="{StaticResource Primary}"/> -->
       
       <StackLayout Grid.Row="2" Grid.ColumnSpan="2" VerticalOptions="Center" Orientation="Horizontal" HorizontalOptions="FillAndExpand">
         <ActivityIndicator IsRunning="{Binding IsBusy}" HorizontalOptions="EndAndExpand" VerticalOptions="Center">
