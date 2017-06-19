@@ -203,6 +203,17 @@
     <AndroidResource Include="Resources\drawable\main_screen.png" />
   </ItemGroup>
   <ItemGroup>
+    <AndroidResource Include="Resources\drawable\loginBackground.png" />
+    <AndroidResource Include="Resources\drawable\loginFacebook.png" />
+    <AndroidResource Include="Resources\drawable\loginTwiter.png" />
+    <Content Include="Resources\images\loginAssets\campoTexto.png" />
+    <Content Include="Resources\images\loginAssets\crearCuenta.png" />
+    <Content Include="Resources\images\loginAssets\ingresar.png" />
+    <Content Include="Resources\images\loginAssets\loginBackground.png" />
+    <Content Include="Resources\images\loginAssets\loginFacebook.png" />
+    <Content Include="Resources\images\loginAssets\loginTwiter.png" />
+    <Content Include="Resources\images\loginAssets\olvidoContrasena.png" />
+    <Content Include="Resources\images\mainScreen\main_screen.png" />
     <Content Include="images\loginAssets\campoTexto.png" />
     <Content Include="images\loginAssets\crearCuenta.png" />
     <Content Include="images\loginAssets\ingresar.png" />

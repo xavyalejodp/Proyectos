@@ -9,8 +9,9 @@
       <Color x:Key="DarkBackgroundColor">#C0C0C0</Color>
       <Color x:Key="MediumGrayTextColor">#4d4d4d</Color>
       <Color x:Key="LightTextColor">#999999</Color>
+      <Color x:Key="RedTextColor">#E24B4F</Color>
 
-	  <Style TargetType="NavigationPage">
+            <Style TargetType="NavigationPage">
 	  	<!--<Setter Property="BarBackgroundColor" Value="{StaticResource Primary}" />-->
                 <Setter Property="BarBackgroundColor" Value="{StaticResource Primary}" />
                 <Setter Property="BarTextColor" Value="White" />
