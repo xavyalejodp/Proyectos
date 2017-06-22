@@ -79,5 +79,15 @@ namespace PryFoodRankApp
                 }
             };
         }
+
+        public static void GoToCreateAccount()
+        {
+            Current.MainPage = new NavigationPage(new CreateAccount())
+            {
+                BarBackgroundColor = (Color)Current.Resources["Primary"],
+                BarTextColor = Color.White
+            };
+        }
+
     }
 }

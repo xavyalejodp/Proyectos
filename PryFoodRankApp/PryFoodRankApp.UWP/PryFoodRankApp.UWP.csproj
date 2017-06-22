@@ -117,6 +117,7 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="images\createAccount\createAccountBackground.png" />
     <Content Include="images\loginAssets\campoTexto.png" />
     <Content Include="images\loginAssets\crearCuenta.png" />
     <Content Include="images\loginAssets\ingresar.png" />

@@ -8,7 +8,7 @@
     <ContentPage.BindingContext>
         <vm:LoginViewModel/>
     </ContentPage.BindingContext>
-    <ScrollView>
+    <ScrollView HorizontalOptions="CenterAndExpand">
         <AbsoluteLayout >
             <Entry                
                 x:Name="UserName" 
@@ -19,8 +19,7 @@
                 Text="" 
                 TextColor="White"
                 BackgroundColor="Transparent"
-                AbsoluteLayout.LayoutBounds="50,180,300,50"
-                
+                AbsoluteLayout.LayoutBounds="50,150,300,40"                
                 >
                 <!--
                 <Entry.FontFamily>
@@ -42,7 +41,7 @@
                 Text=""
                 TextColor="White"
                 BackgroundColor="Transparent"
-                AbsoluteLayout.LayoutBounds="50,240,300,50"
+                AbsoluteLayout.LayoutBounds="50,200,300,40"
                                              
                 
                 >
@@ -64,7 +63,7 @@
           HorizontalOptions="FillAndExpand"
           IsEnabled="{Binding IsNotBusy}"
              TextColor="{StaticResource RedTextColor}"
-                AbsoluteLayout.LayoutBounds="50,300,300,50"
+                AbsoluteLayout.LayoutBounds="50,250,300,40"
                 BackgroundColor="White"
            >
                 <!--
@@ -88,7 +87,7 @@
           IsEnabled="{Binding IsNotBusy}"
              TextColor="White"
                 BackgroundColor="Transparent"
-                AbsoluteLayout.LayoutBounds="50,360,300,50"
+                AbsoluteLayout.LayoutBounds="50,300,300,40"
                 
            >
                 <!--
@@ -111,7 +110,7 @@
                
           IsEnabled="{Binding IsNotBusy}"
              TextColor="{StaticResource RedTextColor}"
-                AbsoluteLayout.LayoutBounds="50,420,300,50"
+                AbsoluteLayout.LayoutBounds="50,350,300,40"
                 Image="images/loginAssets/loginFacebook.png"
                 BackgroundColor="Transparent"
               
@@ -131,7 +130,7 @@
                
           IsEnabled="{Binding IsNotBusy}"
              TextColor="{StaticResource RedTextColor}"
-                AbsoluteLayout.LayoutBounds="50,480,300,50"
+                AbsoluteLayout.LayoutBounds="50,400,300,40"
                 Image="images/loginAssets/loginTwiter.png"
                 BackgroundColor="Transparent"
               
@@ -140,6 +139,29 @@
            >
 
 
+
+            </Button>
+
+            <Button         
+          Text="CREAR CUENTA"
+          Command="{Binding CreateAccountCommand}"
+          x:Name="CrearCuentaButton"
+          HorizontalOptions="FillAndExpand"
+          IsEnabled="{Binding IsNotBusy}"
+             TextColor="{StaticResource RedTextColor}"
+                AbsoluteLayout.LayoutBounds="50,450,300,40"
+                BackgroundColor="White"
+           >
+                <!--
+                
+                <Button.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <OnPlatform.iOS>Lato-Black</OnPlatform.iOS>
+                        <OnPlatform.Android>Lato-Black.ttf#Lato-Black</OnPlatform.Android>
+                        <OnPlatform.WinPhone>/fonts/Lato-Black.ttf.ttf#Lato-Black</OnPlatform.WinPhone>
+                    </OnPlatform>
+                </Button.FontFamily>
+                -->
 
             </Button>
 

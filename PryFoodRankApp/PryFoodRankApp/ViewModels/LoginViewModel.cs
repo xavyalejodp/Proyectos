@@ -15,6 +15,7 @@ namespace PryFoodRankApp.ViewModels
         {
             SignInCommand = new Command(async () => await SignIn());
             NotNowCommand = new Command(App.GoToMainPage);
+            CreateAccountCommand = new Command(App.GoToCreateAccount);
         }
 
         string message = string.Empty;
@@ -26,6 +27,7 @@ namespace PryFoodRankApp.ViewModels
 
         public ICommand NotNowCommand { get; }
         public ICommand SignInCommand { get; }
+        public ICommand CreateAccountCommand { get; }
 
         async Task SignIn()
         {

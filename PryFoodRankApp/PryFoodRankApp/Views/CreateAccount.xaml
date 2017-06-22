@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PryFoodRankApp.Views.CreateAccount"
+             Title="FOODRANK"
+             BackgroundImage="images/createAccount/createAccountBackground.png">
+    <ContentPage.Content>
+        <ScrollView HorizontalOptions="CenterAndExpand">
+            <AbsoluteLayout>
+                <Entry                
+                x:Name="UserName" 
+                HorizontalTextAlignment="Start"
+                Placeholder="USUARIO" 
+                IsPassword="False" 
+                HorizontalOptions="FillAndExpand" 
+                Text="" 
+                TextColor="White"
+                BackgroundColor="Transparent"
+                AbsoluteLayout.LayoutBounds="50,50,300,40"                
+                >
+                    <!--
+                <Entry.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <OnPlatform.iOS>Lato-Black</OnPlatform.iOS>
+                        <OnPlatform.Android>Lato-Black.ttf#Lato-Black</OnPlatform.Android>
+                        <OnPlatform.WinPhone>/fonts/Lato-Black.ttf.ttf#Lato-Black</OnPlatform.WinPhone>
+                    </OnPlatform>
+                </Entry.FontFamily>
+-->
+                </Entry>
+                
+            </AbsoluteLayout>
+            </ScrollView>
+    </ContentPage.Content>
+    
+</ContentPage>
